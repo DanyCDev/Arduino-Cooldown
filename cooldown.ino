@@ -38,7 +38,7 @@ void setup() {
 }
 
 void loop() {
-  bool timerout = istimerout(9000);
+  bool timerout = istimerout(9000); //time for cooldown
   IrReceiver.begin(IRpin);
   Serial.println(timerout);
   if(timerout) {
